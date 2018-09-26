@@ -13,14 +13,14 @@ module.exports = function solveEquation(equation) {
 
   var x1,x2;
 
-  x1=Math.trunc((-b+Math.sqrt(b*b-4*a*c))/(2*a));
-  x2=Math.trunc((-b-Math.sqrt(b*b-4*a*c))/(2*a));
+  x1=((-b+Math.sqrt(b*b-4*a*c))/(2*a));
+  x2=((-b-Math.sqrt(b*b-4*a*c))/(2*a));
   
   var tr;
       if (x1 > x2)
       { tr = x1; x1 = x2; x2 = tr; }
   
-  var otv=[x1,x2];
-  
+  var otv=[x1.toFixed(),x2.toFixed()];
+
   return otv;
 }
